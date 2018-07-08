@@ -29,7 +29,8 @@ function addPlatforms() {
   platforms.create(100, 550, 'platform');
   platforms.create(300, 450, 'platform');
   platforms.create(200, 350, 'platform');
-  platforms.create(600, 200, 'platform');
+  platforms.create(600, 200, 'platform2');
+  platforms.create(100, 110, 'platform2');
   platforms.setAll('body.immovable', true);
 }
 
@@ -69,10 +70,11 @@ window.onload = function () {
 
   // before the game begins
   function preload() {
-    game.stage.backgroundColor = '#5db1ad';
+    game.stage.backgroundColor = '#FF00FF';
 
     //Load images
     game.load.image('platform', 'platform_1.png');
+    game.load.image('platform2', 'platform_2.png');
 
     //Load spritesheets
     game.load.spritesheet('player', 'chalkers.png', 48, 62);
